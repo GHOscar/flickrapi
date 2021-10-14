@@ -1,9 +1,9 @@
-// http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=0547710ddd0128ad25bfd4e90ec89e00&tags=wfloer
-
 // Add HTML to JS
 const lista = document.querySelector('#lista');
 const form = document.querySelector('form');
 const searchTerm = document.querySelector('#search'); // What we put in the box
+
+var key = config.api_key;
 
 // Call the API
 form.addEventListener('submit', e => {
@@ -14,7 +14,7 @@ form.addEventListener('submit', e => {
 });
 
 async function getData(query) {
-    const response = await fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=0547710ddd0128ad25bfd4e90ec89e00&format=json&nojsoncallback=1&per_page=16&tags=${query}
+    const response = await fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&${key}&format=json&nojsoncallback=1&per_page=16&tags=${query}
 `, {
     });
 
