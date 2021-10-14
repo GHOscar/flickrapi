@@ -16,7 +16,7 @@ form.addEventListener('submit', e => {
 });
 
 async function getData(query) {
-    const response = await fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${key}&format=json&nojsoncallback=1&per_page=16&tags=${query}
+    const response = await fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${key}&format=json&nojsoncallback=1&per_page=20&tags=${query}
 `, {
     });
 
