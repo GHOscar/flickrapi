@@ -1,5 +1,3 @@
-// http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=0547710ddd0128ad25bfd4e90ec89e00&tags=wfloer
-
 // Add HTML to JS
 const lista = document.querySelector('#lista');
 const form = document.querySelector('form');
