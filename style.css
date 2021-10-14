@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 90px auto 30px;
+    grid-template-areas:
+        "header"
+        "body"
+        "footer";
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-color: black;
+}
+
+h2 {
+    color: white;
+    margin: auto 20px auto 20px;
+}
+header {
+    border-bottom: 5px solid blue;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px 0;
+}
+
+.nav h2 {
+    font-size: 2rem;
+}
+
+ul#lista li {
+    list-style: none;
+}
+
+.search-box {
+    position: relative;
+    width: 350px;
+}
+
+.search-box input {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 25px;
+    outline: none;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+    border: 1px solid lightgray;
+}
+
+input:focus {
+    box-shadow: 0 0 5px blue;
+    border: 1px solid blue;
+}
+
+.search-box i {
+    color: black;
+    position: absolute;
+    top: 25%;
+    right: 4%;
+    transition: 1.5s;
+}
+
+.search-box i:hover {
+    color: blue;
+}
+
+#lista {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+li img {
+    width: 380px;
+    height: 200px;
+    margin-top: 15px;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 2px;
+}
+
+@media(max-width:768px){
+    .img{
+        width: 100%
+    }
+
+    .nav{
+        justify-content: center;
+    }
+
+    .nav{
+        padding: 5px 0;
+    }
+}
+
+@media(max-width:480px){
+    .nav h2{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .search-box {
+        width: 80%;
+        margin: auto;
+    }
+
+    .search-box input{
+        font-size: .7rem;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 2%;
+}
+
+footer a {
+    color: white;
+    transition: .7s;
+}
+
+footer a:hover{
+    color: blue;
+}
+
+footer .instagram {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+footer .github {
+    display: inline-block;
+    font-size: 1.5rem;
+    
+}
