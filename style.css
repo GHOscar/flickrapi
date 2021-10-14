@@ -134,7 +134,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 2%;
 }
 
 footer a {
@@ -146,6 +145,9 @@ footer a:hover{
     color: blue;
 }
 
+.icons {
+    padding: 2% 2%;
+}
 footer .instagram {
     display: inline-block;
     font-size: 1.5rem;
